@@ -1,38 +1,53 @@
 :root{
-  /* LIGHT BLUE THEME */
-  --bg: #2e67d8;
-  --panel: rgba(255,255,255,0.75);
-  --panel-soft: rgba(255,255,255,0.55);
-  --text: #1e2430;
-  --muted: #5c647a;
-  --border: rgba(0,0,0,0.12);
-  --accent: #5b6cff;
+  /* LIGHT GREEN THEME */
+  --bg: #f7fbf8;                 /* blanc légèrement vert */
+  --panel: rgba(255,255,255,0.78);
+  --panel-soft: rgba(255,255,255,0.62);
+  --text: #16211b;
+  --muted: #4e6156;
+  --border: rgba(16, 35, 25, 0.12);
+  --accent: #2f7d55;             /* vert principal (boutons/accents) */
 
-  --shadow: 0 10px 30px rgba(0,0,0,0.12);
+  --shadow: 0 10px 30px rgba(0,0,0,0.10);
 }
+
 
 *{ box-sizing: border-box; }
 html, body{ margin:0; padding:0; }
 
 body{
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
   background:
-    radial-gradient(1200px 650px at 10% 0%,
-      rgba(235, 11, 85, 0.85) 0%,
-      rgba(235, 11, 85, 0) 70%
+    /* tache menthe en haut-gauche */
+    radial-gradient(900px 600px at 12% 8%,
+      rgba(76, 175, 132, 0.22) 0%,
+      rgba(76, 175, 132, 0) 68%
     ),
-    radial-gradient(1000px 650px at 90% 18%,
-      rgba(1, 30, 49, 0.55) 0%,
-      rgba(1, 30, 49, 0) 70%
+
+    /* tache sauge en haut-droit */
+    radial-gradient(850px 520px at 88% 12%,
+      rgba(46, 125, 85, 0.16) 0%,
+      rgba(46, 125, 85, 0) 70%
     ),
-    radial-gradient(900px 500px at 50% 100%,
-      rgba(112, 10, 10, 0.85) 0%,
-      rgba(112, 10, 10, 0) 60%
+
+    /* tache très douce en bas-centre */
+    radial-gradient(1100px 700px at 50% 105%,
+      rgba(178, 232, 206, 0.45) 0%,
+      rgba(178, 232, 206, 0) 60%
     ),
-    #1252d3;
+
+    /* très léger voile pour “unifier” */
+    linear-gradient(180deg,
+      rgba(255,255,255,0.90) 0%,
+      rgba(247,251,248,1) 100%
+    );
+
+  background-color: var(--bg);
   color: var(--text);
   line-height: 1.65;
 }
+
 
 
 
