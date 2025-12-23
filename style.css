@@ -19,11 +19,12 @@ body{
   background:
     radial-gradient(1200px 650px at 10% 0%, rgba(134, 165, 179, 0.22), transparent 60%),
     radial-gradient(1000px 650px at 90% 18%, rgba(48, 98, 131, 0.25), transparent 55%),
-    radial-gradient(900px 500px at 50% 100%, rgba(255,255,255,0.7), transparent 55%),
-    var(--bg);
+    radial-gradient(900px 500px at 50% 100%, rgba(255,255,255,0.65), transparent 55%),
+    #a9bce2;
   color: var(--text);
   line-height: 1.65;
 }
+
 
 a{ color: inherit; text-decoration: none; }
 img{ max-width: 100%; display: block; }
