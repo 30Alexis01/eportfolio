@@ -1,28 +1,110 @@
 <!doctype html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome | E-Portfolio</title>
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <link rel="icon" type="image/png" href="%VITE_APP_LOGO%" />
-    <link rel="apple-touch-icon" href="%VITE_APP_LOGO%" />
-    <title>%VITE_APP_TITLE%</title>
-    <!-- Add Google Fonts here, example:
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    -->
+      name="description"
+      content="Welcome page of my e-portfolio (academic and professional development)."
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <script
-      defer
-      src="%VITE_ANALYTICS_ENDPOINT%/umami"
-      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
-  </body>
+    <header>
+      <h1>Welcome</h1>
+      <p class="subtitle">
+        Personal &amp; Professional E-Portfolio — <span class="placeholder">to fill: academic year</span>
+      </p>
+    </header>
 
+    <nav>
+      <ul>
+        <li><a href="engineering.html">Engineering course</a></li>
+        <li><a href="mobility.html">International Mobility</a></li>
+        <li><a href="sustainability.html">Sustainability &amp; Civic Engagement</a></li>
+        <li><a href="sport.html">Sport &amp; other activities</a></li>
+        <li><a href="career.html">Career Development</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- HERO: photo + texte (pas des “cases”) -->
+      <section class="welcome-hero">
+        <img class="avatar" src="assets/photo.jpg" alt="Profile picture" />
+
+        <div>
+          <div class="kicker">e-Portfolio</div>
+
+          <h2>
+            Hello, I’m <span class="accent placeholder">to fill: my name</span>
+          </h2>
+
+          <p class="subtitle" style="margin-top: 0.2rem;">
+            <span class="placeholder">to fill: school / program / track</span>
+          </p>
+
+          <p>
+            <strong>Goal:</strong> <span class="placeholder">to fill: short professional goal</span><br />
+            <strong>Focus:</strong> <span class="placeholder">to fill: main topics / interests</span><br />
+            <strong>Mobility:</strong> <span class="placeholder">to fill: target country/region or “to be defined”</span>
+          </p>
+
+          <p class="placeholder">
+            (Replace the photo with assets/photo.jpg. If you don’t want a photo, you can put a neutral image.)
+          </p>
+        </div>
+      </section>
+
+      <!-- Texte aéré (sans cartes) -->
+      <section class="textblock">
+        <h2>About this e-Portfolio</h2>
+        <p>
+          This e-portfolio presents my academic journey, projects and productions, international mobility preparation,
+          sustainability and civic engagement, extracurricular activities, and career development.
+        </p>
+        <p>
+          Each section contains structured content and evidence (documents, links, deliverables) to support my progress.
+        </p>
+      </section>
+
+      <section class="textblock">
+        <h2>Student Profile</h2>
+        <ul>
+          <li><strong>Name:</strong> <span class="placeholder">to fill: my name</span></li>
+          <li><strong>School:</strong> <span class="placeholder">to fill: my school</span></li>
+          <li><strong>Program:</strong> <span class="placeholder">to fill: degree / track</span></li>
+          <li><strong>Academic year:</strong> <span class="placeholder">to fill: year</span></li>
+        </ul>
+      </section>
+
+      <!-- petites cartes légères (tu peux garder, ou supprimer si tu veux encore plus “texte”) -->
+      <section>
+        <div class="grid-3">
+          <article class="card">
+            <h3>Engineering course</h3>
+            <p class="placeholder">to fill: highlight (projects, productions, key courses)</p>
+            <a class="card-link" href="engineering.html">Open →</a>
+          </article>
+
+          <article class="card">
+            <h3>International Mobility</h3>
+            <p class="placeholder">to fill: destination / plan / language preparation</p>
+            <a class="card-link" href="mobility.html">Open →</a>
+          </article>
+
+          <article class="card">
+            <h3>Career Development</h3>
+            <p class="placeholder">to fill: PPP, CV, cover letter, goals</p>
+            <a class="card-link" href="career.html">Open →</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span class="placeholder">to fill: year</span> – E-Portfolio</p>
+    </footer>
+  </body>
 </html>
