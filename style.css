@@ -17,10 +17,10 @@ html, body{ margin:0; padding:0; }
 body{
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   background:
-    radial-gradient(1200px 650px at 10% 0%, rgba(77, 148, 180, 0.22), transparent 60%),
-    radial-gradient(1000px 650px at 90% 18%, rgba(30, 57, 75, 0.25), transparent 55%),
-    radial-gradient(900px 500px at 50% 100%, rgba(112, 10, 10, 0.65), transparent 55%),
-    #6490e9;
+    radial-gradient(1200px 650px at 10% 0%, rgba(235, 11, 85, 0.22), transparent 100%),
+    radial-gradient(1000px 650px at 90% 18%, rgba(1, 30, 49, 0.25), transparent 70%),
+    radial-gradient(900px 500px at 50% 100%, rgba(112, 10, 10, 0.65), transparent 0%),
+    #1252d3;
   color: var(--text);
   line-height: 1.65;
 }
