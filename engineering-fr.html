@@ -5,7 +5,7 @@
     <title>Parcours ingénieur | E-Portfolio</title>
     <meta
       name="description"
-      content="Parcours ingénieur – cours, projets et preuves (Alexis Dieu, ENSEEIHT – Génie Logiciel)."
+      content="Parcours ingénieur – cours, projets et réalisations (Alexis Dieu, ENSEEIHT – Génie Logiciel)."
     />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -16,7 +16,7 @@
 
     <header>
       <h1>Parcours ingénieur</h1>
-      <p class="subtitle">Cours, projets &amp; productions — 2025–2026</p>
+      <p class="subtitle">Cours, projets &amp; réalisations — 2025–2026</p>
     </header>
 
     <nav>
@@ -34,19 +34,20 @@
       <section class="subnav">
         <h2>Accès rapide</h2>
         <ul>
-          <li><a href="#overview">Vue d’ensemble</a></li>
+          <li><a href="#overview">Synthèse</a></li>
           <li><a href="#courses">Cours</a></li>
           <li><a href="#projects">Projets</a></li>
-          <li><a href="#productions">Productions</a></li>
-          <li><a href="#skills">Compétences &amp; preuves</a></li>
+          <li><a href="#deliverables">Livrables</a></li>
+          <li><a href="#skills">Compétences</a></li>
         </ul>
       </section>
 
+      <!-- Synthèse (plus sobre que "vue d'ensemble") -->
       <section id="overview" class="card">
-        <h2>Vue d’ensemble</h2>
+        <h2>Synthèse</h2>
         <ul>
-          <li><strong>Formation :</strong> ENSEEIHT (Toulouse INP) — Diplôme d’ingénieur, parcours Génie Logiciel</li>
-          <li><strong>Axes :</strong> programmation, architecture logicielle, systèmes concurrents/distribués, modélisation</li>
+          <li><strong>Formation :</strong> ENSEEIHT (Toulouse INP) — diplôme d’ingénieur, parcours Génie Logiciel</li>
+          <li><strong>Axes :</strong> programmation, systèmes concurrents/distribués, modélisation, conception logicielle</li>
           <li><strong>Outils :</strong> Git, Linux, OCaml, Java, Python, C, Eclipse/EMF, VS Code, JUnit</li>
         </ul>
       </section>
@@ -58,8 +59,8 @@
           <h3>Programmation fonctionnelle</h3>
           <ul>
             <li><strong>Mots-clés :</strong> OCaml, récursion, fonctions d’ordre supérieur, typage</li>
-            <li><strong>Compétences :</strong> écriture de code correct et lisible, raisonnement sur les fonctions</li>
-            <li><strong>Preuves :</strong> TPs et exercices OCaml</li>
+            <li><strong>Compétences :</strong> code correct et lisible, raisonnement sur les fonctions</li>
+            <li><strong>Support :</strong> TPs et exercices OCaml</li>
           </ul>
         </article>
 
@@ -68,7 +69,7 @@
           <ul>
             <li><strong>Mots-clés :</strong> EMF, OCL, métamodélisation, contraintes, validation</li>
             <li><strong>Compétences :</strong> modéliser, formaliser des règles, automatiser des vérifications</li>
-            <li><strong>Preuves :</strong> projet IDM + contraintes OCL</li>
+            <li><strong>Support :</strong> projet IDM + contraintes OCL</li>
           </ul>
         </article>
 
@@ -77,7 +78,7 @@
           <ul>
             <li><strong>Mots-clés :</strong> concurrence, synchronisation, communication, Java, systèmes distribués</li>
             <li><strong>Compétences :</strong> conception d’architectures, analyse de compromis, mise en œuvre</li>
-            <li><strong>Preuves :</strong> projet Intergiciels (agents mobiles)</li>
+            <li><strong>Support :</strong> projet Intergiciels (agents mobiles)</li>
           </ul>
         </article>
       </section>
@@ -90,10 +91,16 @@
           <h3>Plateforme à agents mobiles (projet Intergiciels)</h3>
           <ul>
             <li><strong>Résumé :</strong> conception et implémentation d’une plateforme distribuée basée sur des agents mobiles.</li>
-            <li><strong>Objectif :</strong> comparer la distribution via RMI “classique” et via agents mobiles, et analyser l’impact sur les performances et la flexibilité.</li>
-            <li><strong>Travail réalisé :</strong> architecture, communications, déplacement d’agents entre hôtes, exécution de traitements distribués.</li>
+            <li>
+              <strong>Objectif :</strong> comparer une approche “classique” (RMI) et une approche par agents mobiles, et analyser
+              l’impact sur les performances et la flexibilité.
+            </li>
+            <li>
+              <strong>Travail réalisé :</strong> architecture, communications, déplacement d’agents entre hôtes, exécution de
+              traitements distribués.
+            </li>
             <li><strong>Technos :</strong> Java, systèmes distribués, intergiciels, agents mobiles, RMI</li>
-            <li><strong>Preuves :</strong> code, tests/mesures, livrables de projet</li>
+            <li><strong>Livrables :</strong> code, tests/mesures, rapport de projet (à ajouter)</li>
           </ul>
         </article>
 
@@ -102,10 +109,16 @@
           <h3>Spécification &amp; validation de systèmes embarqués (projet IDM)</h3>
           <ul>
             <li><strong>Résumé :</strong> modélisation et validation de circuits électroniques embarqués via une approche IDM.</li>
-            <li><strong>Objectif :</strong> définir des méta-modèles et formaliser des contraintes pour vérifier cohérence, validité et redondance.</li>
-            <li><strong>Travail réalisé :</strong> méta-modèles, modélisation de composants/netlists/layouts, contraintes géométriques et fonctionnelles.</li>
+            <li>
+              <strong>Objectif :</strong> définir des méta-modèles et formaliser des contraintes pour vérifier cohérence,
+              validité et redondance.
+            </li>
+            <li>
+              <strong>Travail réalisé :</strong> méta-modèles, modélisation de composants/netlists/layouts, contraintes géométriques
+              et fonctionnelles.
+            </li>
             <li><strong>Technos :</strong> EMF, OCL, Eclipse Modeling Tools, modélisation</li>
-            <li><strong>Preuves :</strong> modèles, contraintes OCL, démonstrations/validations</li>
+            <li><strong>Livrables :</strong> modèles, contraintes OCL, démonstrations/validations</li>
           </ul>
         </article>
 
@@ -140,23 +153,26 @@
         </article>
       </section>
 
-      <section id="productions" class="card">
-        <h2>Productions</h2>
+      <!-- "Productions" -> "Livrables" -->
+      <section id="deliverables" class="card">
+        <h2>Livrables</h2>
         <ul>
           <li>Dépôts de code (Java, OCaml, Python)</li>
-          <li>Contraintes et modèles (EMF/OCL)</li>
-          <li>Rapports / livrables de projets (data &amp; web)</li>
+          <li>Modèles et contraintes (EMF/OCL)</li>
+          <li>Rapports de projets (data &amp; web)</li>
+          <li>Rapport / présentation du projet Intergiciels (agents mobiles) (à ajouter)</li>
         </ul>
       </section>
 
+      <!-- "Compétences & preuves" -> "Compétences" -->
       <section id="skills" class="card">
-        <h2>Compétences &amp; preuves</h2>
+        <h2>Compétences</h2>
 
         <table class="evidence-table">
           <thead>
             <tr>
               <th>Compétence</th>
-              <th>Preuve</th>
+              <th>Exemples</th>
               <th>Niveau / progression</th>
               <th>Perspectives</th>
             </tr>
