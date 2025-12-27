@@ -1,68 +1,64 @@
+// lang.js — robust FR/EN switch for pages like:
+// index.html <-> index-fr.html
+// engineering.html <-> engineering-fr.html
+// etc.
+
 (function () {
-  const FR_SUFFIX = "-fr";
-  const STORAGE_KEY = "site_lang"; // "en" or "fr"
-
-  function isFrenchPage(pathname) {
-    return pathname.endsWith(FR_SUFFIX + ".html");
-  }
-
-  function toFrenchPath(pathname) {
-    if (!pathname.endsWith(".html")) return pathname;
-    if (isFrenchPage(pathname)) return pathname;
-    return pathname.replace(/\.html$/, FR_SUFFIX + ".html");
-  }
-
-  function toEnglishPath(pathname) {
-    if (!pathname.endsWith(".html")) return pathname;
-    return pathname.replace(FR_SUFFIX + ".html", ".html");
-  }
-
-  function desiredLang() {
-    return localStorage.getItem(STORAGE_KEY) || "en";
-  }
-
-  function setLang(lang) {
-    localStorage.setItem(STORAGE_KEY, lang);
-  }
-
-  function redirectIfNeeded() {
-    const lang = desiredLang();
-    const path = window.location.pathname;
-
-    if (!path.endsWith(".html")) return;
-
-    const onFR = isFrenchPage(path);
-
-    if (lang === "fr" && !onFR) {
-      window.location.replace(toFrenchPath(path));
-    } else if (lang === "en" && onFR) {
-      window.location.replace(toEnglishPath(path));
-    }
-  }
-
-  // Auto-redirect at load based on saved preference
-  redirectIfNeeded();
-
-  // Button behavior
   const btn = document.getElementById("langToggle");
   if (!btn) return;
 
-  function refreshButtonLabel() {
-    btn.textContent = isFrenchPage(window.location.pathname) ? "EN" : "FR";
+  function getCurrentFile() {
+    // pathname like "/site/" or "/site/index.html" or "/site/engineering.html"
+    const path = window.location.pathname;
+    let file = path.split("/").pop();
+
+    // If we're at ".../site/" then file === "" -> assume index.html
+    if (!file) file = "index.html";
+
+    return file;
   }
 
-  refreshButtonLabel();
+  function isFrenchFile(file) {
+    return file.endsWith("-fr.html");
+  }
 
-  btn.addEventListener("click", function () {
-    const path = window.location.pathname;
-    const onFR = isFrenchPage(path);
-
-    if (onFR) {
-      setLang("en");
-      window.location.href = toEnglishPath(path);
-    } else {
-      setLang("fr");
-      window.location.href = toFrenchPath(path);
+  function toFrenchFile(file) {
+    if (file === "index.html") return "index-fr.html";
+    if (file.endsWith(".html") && !file.endsWith("-fr.html")) {
+      return file.replace(".html", "-fr.html");
     }
+    return file; // already FR
+  }
+
+  function toEnglishFile(file) {
+    if (file === "index-fr.html") return "index.html";
+    return file.replace("-fr.html", ".html");
+  }
+
+  function buildTargetUrl(targetFile) {
+    // Keep same directory + hash (#section)
+    const parts = window.location.pathname.split("/");
+    parts[parts.length - 1] = targetFile;
+
+    // If original path ended with "/", last part was "" -> we set it to targetFile
+    if (parts[parts.length - 1] === "") parts[parts.length - 1] = targetFile;
+
+    const newPath = parts.join("/").replace(/\/+$/, ""); // avoid trailing slashes
+    return newPath + window.location.hash;
+  }
+
+  function updateButtonLabel() {
+    const file = getCurrentFile();
+    // If current is EN, show FR (meaning "switch to FR"), and vice versa
+    btn.textContent = isFrenchFile(file) ? "EN" : "FR";
+    btn.setAttribute("aria-label", "Change language");
+  }
+
+  btn.addEventListener("click", () => {
+    const file = getCurrentFile();
+    const targetFile = isFrenchFile(file) ? toEnglishFile(file) : toFrenchFile(file);
+    window.location.href = buildTargetUrl(targetFile);
   });
+
+  updateButtonLabel();
 })();
