@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <title>Parcours ingénieur | E-Portfolio</title>
+    <meta
+      name="description"
+      content="Parcours ingénieur – cours, projets et preuves (Alexis Dieu, ENSEEIHT – Génie Logiciel)."
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -12,7 +16,7 @@
 
     <header>
       <h1>Parcours ingénieur</h1>
-      <p class="subtitle">Cours, projets &amp; productions – 2025–2026</p>
+      <p class="subtitle">Cours, projets &amp; productions — 2025–2026</p>
     </header>
 
     <nav>
@@ -40,129 +44,113 @@
 
       <section id="overview" class="card">
         <h2>Vue d’ensemble</h2>
-
-        <p>
-          Cette page présente mon parcours d’ingénieur à l’ENSEEIHT, en mettant l’accent sur les compétences développées,
-          les projets réalisés et les productions concrètes illustrant ma progression en génie logiciel.
-        </p>
-
         <ul>
-          <li><strong>Formation / spécialité :</strong> Diplôme d’ingénieur à l’ENSEEIHT (Toulouse INP) — parcours Génie Logiciel</li>
-          <li><strong>Thématiques principales :</strong> Génie logiciel, programmation, algorithmique, systèmes, ingénierie dirigée par les modèles</li>
-          <li><strong>Outils utilisés :</strong> Git/GitHub, Linux, OCaml, Java, Python, C, Eclipse, VS Code, JUnit</li>
+          <li><strong>Formation :</strong> ENSEEIHT (Toulouse INP) — Diplôme d’ingénieur, parcours Génie Logiciel</li>
+          <li><strong>Axes :</strong> programmation, architecture logicielle, systèmes concurrents/distribués, modélisation</li>
+          <li><strong>Outils :</strong> Git, Linux, OCaml, Java, Python, C, Eclipse/EMF, VS Code, JUnit</li>
         </ul>
       </section>
 
       <section id="courses" class="card">
         <h2>Cours</h2>
-        <p>Vous trouverez ci-dessous une sélection structurée de mes principaux enseignements, avec les acquis majeurs et des éléments de preuve.</p>
 
         <article>
           <h3>Programmation fonctionnelle</h3>
           <ul>
-            <li><strong>Contexte :</strong> Formation ingénieur — parcours Génie Logiciel</li>
-            <li><strong>Thèmes principaux :</strong> OCaml, récursion, fonctions d’ordre supérieur, typage, raisonnement formel</li>
-            <li>
-              <strong>Apprentissages clés :</strong>
-              <ul>
-                <li>Concevoir des programmes robustes à l’aide des paradigmes fonctionnels</li>
-                <li>Comprendre le typage statique fort et les mécanismes d’abstraction</li>
-                <li>Raisonner sur la correction des programmes</li>
-              </ul>
-            </li>
-            <li><strong>Preuves :</strong> TPs de programmation et projets OCaml</li>
+            <li><strong>Mots-clés :</strong> OCaml, récursion, fonctions d’ordre supérieur, typage</li>
+            <li><strong>Compétences :</strong> écriture de code correct et lisible, raisonnement sur les fonctions</li>
+            <li><strong>Preuves :</strong> TPs et exercices OCaml</li>
           </ul>
         </article>
 
         <article>
-          <h3>Ingénierie dirigée par les modèles</h3>
+          <h3>Ingénierie dirigée par les modèles (IDM)</h3>
           <ul>
-            <li><strong>Contexte :</strong> Formation ingénieur — parcours Génie Logiciel</li>
-            <li><strong>Thèmes principaux :</strong> EMF, OCL, métamodélisation, contraintes, Eclipse Modeling Tools</li>
-            <li>
-              <strong>Apprentissages clés :</strong>
-              <ul>
-                <li>Modéliser des systèmes complexes à l’aide de modèles formels</li>
-                <li>Définir et valider des contraintes avec OCL</li>
-                <li>Utiliser des outils de modélisation basés sur Eclipse</li>
-              </ul>
-            </li>
-            <li><strong>Preuves :</strong> Projets de modélisation et définitions de contraintes</li>
+            <li><strong>Mots-clés :</strong> EMF, OCL, métamodélisation, contraintes, validation</li>
+            <li><strong>Compétences :</strong> modéliser, formaliser des règles, automatiser des vérifications</li>
+            <li><strong>Preuves :</strong> projet IDM + contraintes OCL</li>
           </ul>
         </article>
 
         <article>
-          <h3>Systèmes concurrents et intergiciels</h3>
+          <h3>Systèmes concurrents &amp; intergiciels</h3>
           <ul>
-            <li><strong>Contexte :</strong> Formation ingénieur — parcours Génie Logiciel</li>
-            <li><strong>Thèmes principaux :</strong> concurrence, communication inter-processus, Java, middleware</li>
-            <li>
-              <strong>Apprentissages clés :</strong>
-              <ul>
-                <li>Concevoir des applications concurrentes et distribuées</li>
-                <li>Comprendre les mécanismes de synchronisation et de communication</li>
-                <li>Appliquer les principes du génie logiciel dans des projets Java</li>
-              </ul>
-            </li>
-            <li><strong>Preuves :</strong> Projets Java et applications basées sur des intergiciels</li>
+            <li><strong>Mots-clés :</strong> concurrence, synchronisation, communication, Java, systèmes distribués</li>
+            <li><strong>Compétences :</strong> conception d’architectures, analyse de compromis, mise en œuvre</li>
+            <li><strong>Preuves :</strong> projet Intergiciels (agents mobiles)</li>
           </ul>
         </article>
       </section>
 
       <section id="projects" class="card">
         <h2>Projets</h2>
-        <p>Cette section met en avant les projets d’ingénierie auxquels j’ai participé, individuellement ou en équipe.</p>
+
+        <!-- PRIORITÉ 1 -->
+        <article>
+          <h3>Plateforme à agents mobiles (projet Intergiciels)</h3>
+          <ul>
+            <li><strong>Résumé :</strong> conception et implémentation d’une plateforme distribuée basée sur des agents mobiles.</li>
+            <li><strong>Objectif :</strong> comparer la distribution via RMI “classique” et via agents mobiles, et analyser l’impact sur les performances et la flexibilité.</li>
+            <li><strong>Travail réalisé :</strong> architecture, communications, déplacement d’agents entre hôtes, exécution de traitements distribués.</li>
+            <li><strong>Technos :</strong> Java, systèmes distribués, intergiciels, agents mobiles, RMI</li>
+            <li><strong>Preuves :</strong> code, tests/mesures, livrables de projet</li>
+          </ul>
+        </article>
+
+        <!-- PRIORITÉ 2 -->
+        <article>
+          <h3>Spécification &amp; validation de systèmes embarqués (projet IDM)</h3>
+          <ul>
+            <li><strong>Résumé :</strong> modélisation et validation de circuits électroniques embarqués via une approche IDM.</li>
+            <li><strong>Objectif :</strong> définir des méta-modèles et formaliser des contraintes pour vérifier cohérence, validité et redondance.</li>
+            <li><strong>Travail réalisé :</strong> méta-modèles, modélisation de composants/netlists/layouts, contraintes géométriques et fonctionnelles.</li>
+            <li><strong>Technos :</strong> EMF, OCL, Eclipse Modeling Tools, modélisation</li>
+            <li><strong>Preuves :</strong> modèles, contraintes OCL, démonstrations/validations</li>
+          </ul>
+        </article>
+
+        <!-- SECOND PLAN -->
+        <h3 style="margin-top: 1.2rem;">Autres projets (second plan)</h3>
 
         <article>
-          <h3>Prédiction des résultats de matchs de football</h3>
+          <h4>Prédiction des résultats de matchs de football</h4>
           <ul>
-            <li><strong>Objectif :</strong> Prédire les résultats de matchs à l’aide de l’analyse de données et du machine learning</li>
-            <li><strong>Rôle :</strong> Analyse des données, choix et implémentation des modèles</li>
-            <li><strong>Méthodes / outils :</strong> Python, clustering, k-means, DecisionTreeRegressor</li>
-            <li><strong>Résultats :</strong> Modèles de prédiction fonctionnels et analyses comparatives</li>
-            <li><strong>Livrables :</strong> Rapport de projet et code</li>
-            <li><strong>Pistes d’amélioration :</strong> Explorer d’autres modèles et améliorer la qualité des données</li>
+            <li><strong>Objectif :</strong> prédiction de résultats à partir de données historiques</li>
+            <li><strong>Outils :</strong> Python, k-means, DecisionTreeRegressor</li>
+            <li><strong>Livrables :</strong> code + rapport</li>
           </ul>
         </article>
 
         <article>
-          <h3>Analyse et prédiction des médailles olympiques</h3>
+          <h4>Analyse et prédiction des médailles olympiques</h4>
           <ul>
-            <li><strong>Objectif :</strong> Analyser les facteurs influençant les résultats olympiques et prédire les performances futures</li>
-            <li><strong>Rôle :</strong> Analyse de données, modélisation et conception de simulations</li>
-            <li><strong>Méthodes / outils :</strong> Analyse de données, simulations, raisonnement statistique</li>
-            <li><strong>Résultats :</strong> Prédictions pour les Jeux Olympiques de 2028</li>
-            <li><strong>Livrables :</strong> Rapport analytique et modèles de prédiction</li>
-            <li><strong>Pistes d’amélioration :</strong> Intégrer des facteurs de performance et de contexte supplémentaires</li>
+            <li><strong>Objectif :</strong> analyse de facteurs et simulation de scénarios</li>
+            <li><strong>Outils :</strong> analyse de données, simulations</li>
+            <li><strong>Livrables :</strong> rapport + modèles</li>
           </ul>
         </article>
 
         <article>
-          <h3>Site de courtage en ligne (projet collaboratif)</h3>
+          <h4>Site de courtage en ligne (projet collaboratif)</h4>
           <ul>
-            <li><strong>Objectif :</strong> Concevoir et développer une plateforme web collaborative de courtage en ligne</li>
-            <li><strong>Rôle :</strong> Développement logiciel au sein d’une équipe</li>
-            <li><strong>Méthodes / outils :</strong> Technologies web, développement collaboratif</li>
-            <li><strong>Résultats :</strong> Application en cours de finalisation</li>
-            <li><strong>Livrables :</strong> Code source et prototype web</li>
-            <li><strong>Pistes d’amélioration :</strong> Finaliser les fonctionnalités et renforcer la robustesse</li>
+            <li><strong>Objectif :</strong> développement d’une application web en équipe</li>
+            <li><strong>Outils :</strong> technologies web, travail collaboratif</li>
+            <li><strong>Livrables :</strong> code + prototype</li>
           </ul>
         </article>
       </section>
 
       <section id="productions" class="card">
         <h2>Productions</h2>
-        <p>Voici quelques productions concrètes réalisées dans le cadre de mon parcours ingénieur.</p>
         <ul>
-          <li>Rapports de projets logiciels (IA et analyse de données)</li>
-          <li>Dépôts de code source (Java, Python, OCaml)</li>
-          <li>Prototype d’application web développé en équipe</li>
+          <li>Dépôts de code (Java, OCaml, Python)</li>
+          <li>Contraintes et modèles (EMF/OCL)</li>
+          <li>Rapports / livrables de projets (data &amp; web)</li>
         </ul>
       </section>
 
       <section id="skills" class="card">
         <h2>Compétences &amp; preuves</h2>
-        <p>Ce tableau met en relation les compétences acquises avec les preuves associées.</p>
 
         <table class="evidence-table">
           <thead>
@@ -176,27 +164,27 @@
           <tbody>
             <tr>
               <td>Programmation (OCaml, Java, Python, C)</td>
-              <td>TPs, projets IA, projets logiciels</td>
+              <td>TPs OCaml + projets Java/Python</td>
               <td>Intermédiaire</td>
-              <td>Approfondir l’architecture logicielle et les bonnes pratiques</td>
+              <td>Renforcer tests, qualité, architecture</td>
             </tr>
             <tr>
-              <td>Ingénierie dirigée par les modèles</td>
-              <td>Projets de modélisation EMF/OCL</td>
+              <td>Systèmes distribués / intergiciels</td>
+              <td>Projet agents mobiles (Java, RMI)</td>
               <td>Intermédiaire</td>
-              <td>Appliquer ces approches à des systèmes de plus grande ampleur</td>
+              <td>Approfondir performance, tolérance aux pannes</td>
             </tr>
             <tr>
-              <td>Algorithmique et analyse de données</td>
-              <td>Projets de prédiction football et JO</td>
+              <td>Modélisation &amp; validation</td>
+              <td>Projet IDM + contraintes OCL</td>
               <td>Intermédiaire</td>
-              <td>Explorer des techniques avancées d’optimisation et de machine learning</td>
+              <td>Appliquer à des systèmes plus complexes</td>
             </tr>
             <tr>
-              <td>Outils logiciels &amp; travail collaboratif</td>
-              <td>Projets Git/GitHub, développements en équipe</td>
+              <td>Travail collaboratif</td>
+              <td>Git + projets en équipe</td>
               <td>Intermédiaire</td>
-              <td>Améliorer les workflows collaboratifs et les pratiques CI</td>
+              <td>Améliorer workflow (revues, CI)</td>
             </tr>
           </tbody>
         </table>
