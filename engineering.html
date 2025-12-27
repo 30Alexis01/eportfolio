@@ -2,24 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Engineering course | E-Portfolio</title>
+    <title>Engineering Track | E-Portfolio</title>
+    <meta
+      name="description"
+      content="Engineering track – courses, projects and achievements (Alexis Dieu, ENSEEIHT – software engineering)."
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+    <!-- Language toggle button -->
+    <button id="langToggle" class="lang-btn" type="button" aria-label="Change language">FR</button>
+
     <header>
-      <h1>Engineering course</h1>
-      <p class="subtitle">Courses, projects &amp; productions – 2025–2026</p>
+      <h1>Engineering Track</h1>
+      <p class="subtitle">Courses, projects &amp; achievements — 2025–2026</p>
     </header>
 
     <nav>
       <ul>
-        <li><a href="index.html">Welcome</a></li>
-        <li><a href="engineering.html">Engineering course</a></li>
-        <li><a href="mobility.html">International Mobility</a></li>
-        <li><a href="sustainability.html">Sustainability &amp; Civic Engagement</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="engineering.html">Engineering track</a></li>
+        <li><a href="mobility.html">International mobility</a></li>
+        <li><a href="sustainability.html">Sustainability &amp; civic engagement</a></li>
         <li><a href="sport.html">Sport &amp; other activities</a></li>
-        <li><a href="career.html">Career Development</a></li>
+        <li><a href="career.html">Career development</a></li>
       </ul>
     </nav>
 
@@ -27,183 +34,131 @@
       <section class="subnav">
         <h2>Quick access</h2>
         <ul>
-          <li><a href="#overview">Overview</a></li>
+          <li><a href="#overview">Summary</a></li>
           <li><a href="#courses">Courses</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#productions">Productions</a></li>
-          <li><a href="#skills">Skills &amp; evidence</a></li>
         </ul>
       </section>
 
+      <!-- Summary -->
       <section id="overview" class="card">
-        <h2>Overview</h2>
-
-        <p>
-          This page presents my engineering curriculum at ENSEEIHT, focusing on the skills I developed,
-          the projects I carried out, and the concrete productions that demonstrate my progress in software engineering.
-        </p>
-
+        <h2>Summary</h2>
         <ul>
-          <li><strong>Program / track:</strong> Engineering degree at ENSEEIHT (Toulouse INP) — Software Engineering track</li>
-          <li><strong>Main themes:</strong> Software engineering, programming, algorithms, systems, model-driven engineering</li>
-          <li><strong>Tools used:</strong> Git/GitHub, Linux, OCaml, Java, Python, C, Eclipse, VS Code, JUnit</li>
+          <li><strong>Education:</strong> ENSEEIHT (Toulouse INP) — Engineering degree, software engineering track</li>
+          <li><strong>Main focuses:</strong> programming, concurrent/distributed systems, modeling, software design</li>
+          <li><strong>Programming languages:</strong> OCaml, Java, Python, C</li>
+          <li><strong>Tools:</strong> Git, Linux, Eclipse, VS Code, JUnit</li>
+          <li><strong>Frameworks:</strong> EMF, JUnit</li>
         </ul>
       </section>
 
       <section id="courses" class="card">
         <h2>Courses</h2>
-        <p>Below is a structured list of my main courses, with key learnings and linked evidence.</p>
 
         <article>
-          <h3>Functional Programming</h3>
+          <h3>Functional programming</h3>
           <ul>
-            <li><strong>Context:</strong> Engineering curriculum — Software Engineering track</li>
-            <li><strong>Main topics:</strong> OCaml, recursion, higher-order functions, typing, formal reasoning</li>
-            <li>
-              <strong>What I learned:</strong>
-              <ul>
-                <li>Designing robust programs using functional paradigms</li>
-                <li>Understanding strong static typing and abstraction mechanisms</li>
-                <li>Reasoning about program correctness</li>
-              </ul>
-            </li>
-            <li><strong>Evidence:</strong> Programming assignments and OCaml projects</li>
+            <li><strong>Keywords:</strong> OCaml, recursion, higher-order functions, typing</li>
+            <li><strong>Skills:</strong> correct and readable code, reasoning about functions</li>
+            <li><strong>Materials:</strong> OCaml practical sessions and exercises</li>
           </ul>
         </article>
 
         <article>
-          <h3>Model-Driven Engineering</h3>
+          <h3>Model-Driven Engineering (MDE)</h3>
           <ul>
-            <li><strong>Context:</strong> Engineering curriculum — Software Engineering track</li>
-            <li><strong>Main topics:</strong> EMF, OCL, metamodeling, constraints, Eclipse Modeling Tools</li>
-            <li>
-              <strong>What I learned:</strong>
-              <ul>
-                <li>Modeling complex systems using formal models</li>
-                <li>Defining and validating constraints with OCL</li>
-                <li>Using Eclipse-based modeling tools</li>
-              </ul>
-            </li>
-            <li><strong>Evidence:</strong> Modeling projects and constraint definitions</li>
+            <li><strong>Keywords:</strong> EMF, OCL, metamodeling, constraints, validation</li>
+            <li><strong>Skills:</strong> modeling, formalizing rules, automating verification</li>
+            <li><strong>Materials:</strong> MDE project with OCL constraints</li>
           </ul>
         </article>
 
         <article>
-          <h3>Concurrent Systems and Middleware</h3>
+          <h3>Concurrent systems &amp; middleware</h3>
           <ul>
-            <li><strong>Context:</strong> Engineering curriculum — Software Engineering track</li>
-            <li><strong>Main topics:</strong> concurrency, inter-process communication, Java, middleware</li>
-            <li>
-              <strong>What I learned:</strong>
-              <ul>
-                <li>Designing concurrent and distributed applications</li>
-                <li>Understanding synchronization and communication mechanisms</li>
-                <li>Applying software engineering principles in Java projects</li>
-              </ul>
-            </li>
-            <li><strong>Evidence:</strong> Java projects and middleware-based applications</li>
+            <li><strong>Keywords:</strong> concurrency, synchronization, communication, Java, distributed systems</li>
+            <li><strong>Skills:</strong> architecture design, trade-off analysis, implementation</li>
+            <li><strong>Materials:</strong> Middleware project (mobile agents)</li>
           </ul>
         </article>
       </section>
 
       <section id="projects" class="card">
         <h2>Projects</h2>
-        <p>This section highlights the engineering projects I worked on, individually or as a team.</p>
+
+        <!-- PRIORITY 1 -->
+        <article>
+          <h3>Mobile agent platform (Middleware project)</h3>
+          <ul>
+            <li><strong>Summary:</strong> design and implementation of a distributed platform based on mobile agents.</li>
+            <li>
+              <strong>Objective:</strong> compare a “classical” approach (RMI) with a mobile-agent-based approach and analyze
+              the impact on performance and flexibility.
+            </li>
+            <li>
+              <strong>Work carried out:</strong> architecture, communications, agent migration between hosts, execution of
+              distributed processing.
+            </li>
+            <li><strong>Technologies:</strong> Java, distributed systems, middleware, mobile agents, RMI</li>
+            <li><strong>Deliverables:</strong> code, tests/measurements, project report</li>
+          </ul>
+        </article>
+
+        <!-- PRIORITY 2 -->
+        <article>
+          <h3>Specification &amp; validation of embedded systems (MDE project)</h3>
+          <ul>
+            <li><strong>Summary:</strong> modeling and validation of embedded electronic circuits using an MDE approach.</li>
+            <li>
+              <strong>Objective:</strong> define metamodels and formalize constraints to verify consistency,
+              validity, and redundancy.
+            </li>
+            <li>
+              <strong>Work carried out:</strong> metamodels, modeling of components/netlists/layouts, geometric
+              and functional constraints.
+            </li>
+            <li><strong>Technologies:</strong> EMF, OCL, Eclipse Modeling Tools, modeling</li>
+            <li><strong>Deliverables:</strong> models, OCL constraints, demonstrations/validations</li>
+          </ul>
+        </article>
+
+        <!-- SECONDARY -->
+        <h3 style="margin-top: 1.2rem;">Other projects (secondary)</h3>
 
         <article>
-          <h3>Football Match Result Prediction</h3>
+          <h4>Football match outcome prediction</h4>
           <ul>
-            <li><strong>Goal:</strong> Predict football match outcomes using data analysis and machine learning techniques</li>
-            <li><strong>My role:</strong> Data analysis, model selection and implementation</li>
-            <li><strong>Methods / tools:</strong> Python, clustering, k-means, DecisionTreeRegressor</li>
-            <li><strong>Results:</strong> Functional prediction models and comparative analysis</li>
-            <li><strong>Deliverables:</strong> Project report and code</li>
-            <li><strong>What I would improve:</strong> Explore additional models and improve dataset quality</li>
+            <li><strong>Objective:</strong> predict match results using historical data</li>
+            <li><strong>Tools:</strong> Python, k-means, DecisionTreeRegressor</li>
+            <li><strong>Deliverables:</strong> code + report</li>
           </ul>
         </article>
 
         <article>
-          <h3>Olympic Medals Analysis and Prediction</h3>
+          <h4>Analysis and prediction of Olympic medals</h4>
           <ul>
-            <li><strong>Goal:</strong> Analyze factors influencing Olympic medal results and predict future outcomes</li>
-            <li><strong>My role:</strong> Data analysis, modeling, and simulation design</li>
-            <li><strong>Methods / tools:</strong> Data analysis, simulations, statistical reasoning</li>
-            <li><strong>Results:</strong> Predictions for future Olympic Games (2028)</li>
-            <li><strong>Deliverables:</strong> Analytical report and prediction models</li>
-            <li><strong>What I would improve:</strong> Integrate additional performance and contextual factors</li>
+            <li><strong>Objective:</strong> factor analysis and scenario simulation</li>
+            <li><strong>Tools:</strong> data analysis, simulations</li>
+            <li><strong>Deliverables:</strong> report + models</li>
           </ul>
         </article>
 
         <article>
-          <h3>Online Brokerage Website (Collaborative Project)</h3>
+          <h4>Online brokerage website (collaborative project)</h4>
           <ul>
-            <li><strong>Goal:</strong> Design and develop a collaborative web platform for online brokerage</li>
-            <li><strong>My role:</strong> Software development within a team</li>
-            <li><strong>Methods / tools:</strong> Web technologies, collaborative development</li>
-            <li><strong>Results:</strong> Application under finalization</li>
-            <li><strong>Deliverables:</strong> Source code and web prototype</li>
-            <li><strong>What I would improve:</strong> Finalize features and improve robustness</li>
+            <li><strong>Objective:</strong> team-based development of a web application</li>
+            <li><strong>Tools:</strong> web technologies, collaborative work</li>
+            <li><strong>Deliverables:</strong> code + prototype</li>
           </ul>
         </article>
-      </section>
-
-      <section id="productions" class="card">
-        <h2>Productions</h2>
-        <p>Here are concrete outputs produced during my engineering course (documents, code, posters, prototypes, etc.).</p>
-        <ul>
-          <li>Software project reports (AI and data analysis projects)</li>
-          <li>Source code repositories (Java, Python, OCaml)</li>
-          <li>Web application prototype developed collaboratively</li>
-        </ul>
-      </section>
-
-      <section id="skills" class="card">
-        <h2>Skills &amp; evidence</h2>
-        <p>This table connects skills to evidence (projects, productions, or course deliverables).</p>
-
-        <table class="evidence-table">
-          <thead>
-            <tr>
-              <th>Skill</th>
-              <th>Evidence</th>
-              <th>Level / progress</th>
-              <th>Next steps</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Programming (OCaml, Java, Python, C)</td>
-              <td>Course assignments, AI projects, software projects</td>
-              <td>Intermediate</td>
-              <td>Deepen software architecture and best practices</td>
-            </tr>
-            <tr>
-              <td>Model-driven engineering</td>
-              <td>EMF/OCL modeling projects</td>
-              <td>Intermediate</td>
-              <td>Apply modeling approaches to larger systems</td>
-            </tr>
-            <tr>
-              <td>Algorithms and data analysis</td>
-              <td>Football and Olympic prediction projects</td>
-              <td>Intermediate</td>
-              <td>Explore advanced optimization and machine learning techniques</td>
-            </tr>
-            <tr>
-              <td>Software tools &amp; collaboration</td>
-              <td>Git/GitHub projects, team-based developments</td>
-              <td>Intermediate</td>
-              <td>Improve collaborative workflows and CI practices</td>
-            </tr>
-          </tbody>
-        </table>
       </section>
     </main>
 
     <footer>
       <p>© Alexis Dieu – E-Portfolio</p>
     </footer>
-    <script src="lang.js"></script>
 
+    <!-- Language switch logic -->
+    <script src="lang.js"></script>
   </body>
 </html>
